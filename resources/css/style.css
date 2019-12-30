@@ -1,0 +1,573 @@
+/*----ALAPBEÁLLíTÁSOK----*/
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+html,
+body{
+	background-color: #fff;
+	color:#2d3436;
+	font-family:"Raleway", "Arial";
+	font-size:16px;
+	font-weight:400;
+	overflow-x:hidden;
+}
+
+/*----ÚJRA FELHASZNÁLANDÓ ELEMEK----*/
+
+
+.menu{
+	margin-left:5%;
+}
+
+.row{
+	max-width:1140px;
+	margin: 0 auto;
+}
+
+section{
+	padding:80px 0;
+}
+
+p{
+	line-height:150%;
+}
+
+/*----HEADINGS----*/
+h1{
+	margin:0;
+	font-size:250%;
+	text-transform:uppercase;
+	font-weight:300;
+	word-spacing:2px;
+	letter-spacing:2px;
+	word-spacing: 5px;
+	margin-bottom:40px;	
+
+}
+
+h2{
+	text-transform:uppercase;
+	font-size:230%;
+	text-align:center;
+	font-weight:400;
+	letter-spacing: 2px;
+	margin-bottom:30px;
+	font-family:"Raleway";
+}
+
+h2:after{
+	margin-top:5px;
+	display:block;
+	height:2px;
+	background-color:#d63031;
+	content:"";
+	width:100px;
+	margin:0 auto;
+	margin-top:30px;
+
+}
+
+h3{
+	font-size:150%;
+	letter-spacing:2px;
+	font-weight:400;
+	text-align:left;
+	margin-left:80px;
+	margin-bottom:30px;
+	margin-top:5px;
+}
+
+
+h4{
+	padding-left:20px;
+	line-height:150%;
+
+}
+
+h5{
+	text-transform:uppercase;
+	font-weight:400;
+	letter-spacing: 1px;
+	font-size:110%;
+	margin-bottom:10px;
+
+	}
+
+
+
+
+/*-----IKONOK------*/
+
+.icon-me{
+	margin-left:20px;
+	font-size:240%;
+	display:inline-block;
+	float:left;
+	color:#d63031;
+
+}
+
+
+/*-----GOMBOK------*/
+
+.button:link,
+.button:visited{
+	color:#d63031;
+	font-weight:400;
+	text-decoration:none;
+	padding: 10px 30px;
+	font-weight:300;
+	border-radius:200px;
+	border:2px solid #d63031;
+	margin-left: 20px;
+	
+}
+
+.button:hover,
+.button:active{
+	background-color:#d63031;
+	color:#fff;
+	font-weight:400;
+	text-decoration:none;
+	padding: 10px 30px;
+	font-weight:300;
+	border-radius:200px;
+	border:2px solid #d63031;
+	margin-left: 20px;
+	-webkit-transition: background-color 0.5s, color 0.5s;
+	transition: background-color 0.5s, color 0.5s;
+}
+
+
+/*----HEADER----*/
+
+header{
+
+	background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(img/hero_background.jpg);
+	height:100vh;
+	background-size:cover;
+		-o-background-size: cover;
+    	-moz-background-size: cover;
+    	-webkit-background-size:cover;
+	background-position:center;
+		-o-background-position:center;
+		-moz-background-position:center;
+		-webkit-background-position:center;
+	background-attachment:fixed;
+
+
+}
+
+.hero-text-box{
+	color:#fff;
+	position:absolute;
+	width:1140px;
+	top:20%;
+	left:5%
+	
+}
+
+.hero-text-box p{
+	font-size:120%;
+	line-height:150%;
+}
+
+.goal-step{
+	margin-bottom:24px;
+}
+
+.goal-step div{
+	color:#d63031;
+	border: 2px solid #d63031;
+	display:inline-block;
+	height:45px;
+	width:45px;
+	text-align:center;
+	padding:5px;
+	float:left;
+	font-size:120%;
+	border-radius:50%;
+	margin-right: 25px;
+}
+
+
+.welcome-text{
+	margin-bottom:40px;
+}
+
+.start{
+	margin-top:40px;
+}
+
+
+
+/*----NAVBAR----*/
+
+.main-nav{
+	float:left;
+	list-style:none;
+	margin-top:40px;
+
+}
+
+.main-nav li{
+	display:inline-block;
+	margin-right:40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+	text-decoration:none;
+	color:#fff;
+	text-transform:uppercase;
+	font-size: 110%;
+	letter-spacing: 2px;
+	border-bottom:2px solid transparent;
+	-webkit-transition: border-bottom 0.5s;
+	transition: border-bottom 0.5s;
+	padding:5px 0;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+	border-bottom:2px solid #d63031;
+	
+}
+
+
+/*----sticky navi----*/
+
+.sticky{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	background-color:#fff;
+	box-shadow: 0 2px 2px #efefef;
+	z-index:9999;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited{
+	color:#555;
+	padding:5px 0;
+}
+
+.sticky .main-nav{
+
+	margin-top:20px;
+	margin-bottom:20px;
+
+}
+
+
+/*----mobile navi----*/
+
+.mobile-nav-icon{
+	float:right;
+	margin-top:20px;
+	margin-right:20px;
+	cursor:pointer;
+	display:none;
+
+}
+
+.mobile-menu{
+	font-size:200%;
+	color:#fff;
+}
+
+/*----ABOUTME----*/
+
+
+.short-text{
+	line-height:150%;
+	width:70%;
+	margin-left:15%;
+	text-align:center;
+	font-size:110%;
+	margin-bottom:30px;
+}
+
+.en1{
+	width:12%;
+	height:auto;
+	border-radius:100px;
+	float:center;
+	margin-left:44%;
+	margin-bottom:10px;
+}
+
+.text-me{
+	text-align: justify;
+	padding:0 20px;
+	line-height:150%;
+}
+
+.dolt{
+	font-style:italic;
+}
+
+/*----WEBFEJLESZTÉS----*/
+
+
+
+.webfejlesztes{
+	background-color:#f1f2f6;
+}
+
+
+.icons{
+	width:100%;
+	margin-bottom:100px;
+}
+
+.icons-li{
+	float:left;
+	width:12.5%;
+	height:auto;
+	display:block;
+	font-size:50px;
+	text-align:center;
+}
+
+.colored{
+	margin:0;
+	width:100%;
+}
+
+.box img{
+	width:100%;
+	height:auto;
+	margin-bottom: 20px;
+	border-radius:20px;
+	-webkit-transition:-webkit-transform 0.5s;
+	transition:-webkit-transform 0.5s;
+	transition:transform 0.5s;
+	transition:transform 0.5s, -webkit-transform 0.5s
+
+}
+
+.box img:hover{
+	-webkit-transform:scale(1.05);
+	        transform:scale(1.05);
+	margin-bottom: 20px;
+	border-radius:20px;
+
+}
+
+.webfejlesztes-text{
+	
+	margin-bottom:10px;
+}
+
+.munkak-leiras{
+	margin-bottom:40px;
+}
+
+/*----CONTACT ME----*/
+
+
+.contact-section{
+  font-family:arial,sans-serif;
+  font-size:100%;
+  margin:0em;
+background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(img/contact.jpg);
+	height:550px;
+	background-size:cover;
+	background-position:center;
+	background-attachment:fixed;
+	-o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size:cover;
+  color:#fff;
+
+}
+h6,p{
+  font-size:100%;
+  font-weight:normal;
+}
+
+.contact {
+  overflow:hidden;
+  padding:3em;
+   display:block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  text-align:center;
+ 
+  
+}
+.contact li a{
+  text-decoration:none;
+  color:#000;
+  background:#ffc;
+  display:block;
+  height:10em;
+  width:10em;
+  padding:0.5em;
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  -moz-transition:-moz-transform .15s linear;
+  -o-transition:-o-transform .15s linear;
+  -webkit-transition:-webkit-transform .15s linear;
+  text-align:left
+
+}
+.contact li{
+  margin:1em;
+
+  display:inline-block;
+  list-style:none;
+
+}
+.contact li h6{
+  font-size:140%;
+  font-weight:bold;
+  padding-bottom:10px;
+}
+.contact li p{
+  font-family:"Reenie Beanie",arial,sans-serif;
+  font-size:150%;
+}
+.contact li a{
+  -webkit-transform: rotate(-6deg);
+  -o-transform: rotate(-6deg);
+  -moz-transform:rotate(-6deg);
+}
+.contact li:nth-child(even) a{
+  -o-transform:rotate(4deg);
+  -webkit-transform:rotate(4deg);
+  -moz-transform:rotate(4deg);
+  position:relative;
+  top:5px;
+  background:#cfc;
+}
+.contact li:nth-child(3n) a{
+  -o-transform:rotate(-3deg);
+  -webkit-transform:rotate(-3deg);
+  -moz-transform:rotate(-3deg);
+  position:relative;
+  top:-5px;
+  background:#ccf;
+}
+.contact li:nth-child(5n) a{
+  -o-transform:rotate(5deg);
+  -webkit-transform:rotate(5deg);
+  -moz-transform:rotate(5deg);
+  position:relative;
+  top:-10px;
+}
+.contact li a:hover,.contact li a:focus{
+  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -o-transform: scale(1.25);
+  position:relative;
+  z-index:5;
+}
+ol{text-align:center;}
+ol li{display:inline;padding-right:1em;}
+ol li a{color:#fff;}
+
+/*----FOOTER----*/
+
+footer{
+	background-color:#2d3436;
+	padding:50px;
+	text-align:center;
+
+}
+
+.social-links{
+	list-style:none;
+	text-align:center;
+
+}
+
+.social-links li{
+	display:inline-block;
+	margin-right:20px;
+
+}
+
+.social-links li:last-child{
+	margin-right:0;
+
+
+} 
+
+.social-links li a:link,
+.social-links li a:visited{
+	color:#fff;
+	border:0;
+	text-decoration:none;
+	-webkit-transition:0.5s;
+	transition:0.5s;
+
+} 
+
+.social-links li a:link,
+.social-links li a:visited{
+	font-size:130%;
+	  }
+
+
+footer p{
+	text-align:center;
+
+	color:#fff;
+	font-size:80%;
+	margin-top:10px;
+}
+
+.logo-linkedin:hover,
+.logo-linkeding:active{
+color:#007bb5;
+}
+
+.mail:hover,
+.mail:active{
+color:#db4437;
+}
+
+.logo-github:hover,
+.logo-github:active{
+color:#000;
+}
+
+.mail:hover,
+.logo-linkedin:hover,
+.logo-github:hover{
+	-webkit-transition:0.5s;
+	transition:0.5s;
+}
+
+/*----Animations----*/
+
+.js-wp-1,
+.js-wp-2,
+.js-wp-3,
+.js-wp-4,
+.js-wp-5{
+	opacity:0;
+	-webkit-animation-duration:1s;
+	        animation-duration:1s;
+}
+
+.js-wp-1.animated,
+.js-wp-2.animated,
+.js-wp-3.animated,
+.js-wp-4.animated,
+.js-wp-5.animated{
+	opacity:1;
+}
+
+
+}

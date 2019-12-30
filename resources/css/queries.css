@@ -1,0 +1,241 @@
+
+
+/* kisebb gépek és a row-1140 px volt */
+
+@media only screen and (max-width:1200px){
+
+	.hero-text-box{
+	width:100%;
+	padding:0 2%;
+	
+
+}
+
+
+.row,
+.hero-text-box{
+	width:100%;
+	padding:0 2%;
+}
+
+.menu{
+	width:100%;
+	padding:0 2%;
+}
+
+.hero-text-box p{
+	font-size:100%;
+	line-height:150%;
+}
+
+
+h1{
+
+	font-size:200%;
+
+  }
+
+  h5{
+	font-size:100%;
+}
+
+
+/* max 1023px, ezek az iPadek,portrait modeban. iPad landscape modeban 1024px  */
+
+
+@media only screen and (max-width:1023px){
+
+body{
+	font-size:14px;
+}
+
+section{
+	padding:50px 0;
+}
+
+.short-text{
+	width:90%;
+	margin-left:5%;
+}
+
+h5{
+	font-size:80%;
+}
+
+footer{
+
+	padding:15px;
+}
+
+footer p{
+	margin-top:10px;
+}
+
+.footer-nav li,
+.social-links li{
+
+	margin-right:5px;
+}
+}
+
+
+/* max 767px, nagyobb telefonok,tabletek de kisebb mint az iPad, mert az 768px*/
+
+
+@media only screen and (max-width:767px){
+
+body{
+	font-size:13px;
+}
+
+
+header{
+	background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(img/hero_background_tel.jpg);
+	background-size:cover;
+}
+
+.welcome-text{
+	margin-bottom:20px;
+}
+
+.button:link{
+	padding: 5px 15px;
+}
+
+.start{
+	margin-top:20px;
+}
+
+.goal-step{
+	margin-bottom:15px;
+
+  }
+.contact-section{
+
+background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(img/contact_tel.jpg);
+background-size:cover;
+}
+
+.col{
+	width:100%;
+	margin: 0 0 4% 0;
+
+}
+
+.goal-step div{
+	height:30px;
+	width:30px;
+	margin-right:10px;
+	font-size:100%; }
+
+.main-nav {
+	display:none;
+}
+
+
+.main-nav{
+	float:left;
+	margin-top:20px;
+}
+
+.main-nav li{
+	display:block;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+	display:block;
+	border:0;
+	padding:10px 0;
+
+}
+
+.mobile-nav-icon{
+	display:inline-block;
+}
+
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited{
+	padding:10px 0;
+}
+
+.sticky .main-nav{
+
+	margin-top:20px;
+
+}
+
+.sticky .mobile-menu{
+	color:#555;
+}
+
+.box img{
+	width:50%;
+	margin-bottom:5px;
+
+	  }
+
+.row,
+.hero-text-box{
+	padding: 0 4%;
+
+}
+
+.hero-text-box{
+	left:0%;
+}
+
+.munkak-leiras{
+	margin-bottom:10px;
+}
+
+section{
+	padding:30px 0;
+}
+
+
+.short-text{
+	width:100%;
+	margin-left:0%;
+	margin:0 0 20px 0;
+
+}
+
+h1{
+	margin-top:50px;
+	margin-bottom:30px;
+	font-size:200%;
+}
+
+h2{
+	font-size:200%;
+}
+
+h3{
+	margin-bottom:10px;
+}
+
+h5{
+	font-size:100%;
+	margin-bottom:0;
+}
+
+.text-me{
+	padding:0;
+}
+
+h4{
+	padding:0;
+}
+
+
+  }
+/* max 480px, régi iphnek, kis telefonok */
+
+@media only screen and (max-width:480px){
+
+	.icons-li{
+	font-size:25px;
+}
+}
